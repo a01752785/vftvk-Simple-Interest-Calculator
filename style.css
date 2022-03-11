@@ -4,16 +4,24 @@ body {
 
 .rounded-white-box {
     background-color: white;
+    color: black;
     font-family: arial;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
 }
 
 .title {
-    color: gray;
-    font-family: monospace;
+    color: grey;
+    font-family: verdana;
     font-weight: bold;
     text-align: center;
+}
+
+.form {
+    padding: 0px 50px 0px 50px;
+    text-align: left;
 }
 
 
