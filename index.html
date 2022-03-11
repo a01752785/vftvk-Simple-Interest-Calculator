@@ -4,13 +4,34 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="rounded-white-box">
+            <h1 class="title">Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            Amount <input type="number"  id="amount">  <br/>
+            Interest Rate <input type="range" min="1" max="20" value="10" onchange="updateRateText(this.value)" id="rate"> 
+            <span id="rate-text">10%</span> <br/>
+            No. of Years 
+            <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br/>
+            <button onclick="generateOutput()">Compute Interest</button><br>
 
-        <button onclick="compute()">Compute</button>
+
+            <span id="result"></span><br><br>
+
+            &copy Everyone Can Get Rich
+        </div>
+        
+        
     </body>
 </html>
